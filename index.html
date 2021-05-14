@@ -1,0 +1,95 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <title>Helpper</title>
+</head>
+
+<body>
+  <header class="style-header">
+    <img src="./assets/logo.png" alt="">
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="container">
+        <h1> Cadastro </h1>
+        <form class="form" method="GET" action="">
+          <div class='wrapper-one'>
+            <input class="nome" type="text" class="" id="nome" placeholder="Nome">
+          </div>
+          <div class='wrapper-two'>
+            <input type="text" class="email" id="email" placeholder="E-mail">
+            <input type="text" class="cpf" id="cpf" placeholder="CPF ou CNPJ">
+            <input type="text" class="telefone" id="telefone" placeholder="Telefone">
+          </div>
+          <div class='wrapper-three'>
+            <div class="size-table-cep">
+              <input type="text" class="cep" name="cep" id="cep" value="" placeholder="CEP"
+                onblur="pesquisaCep(this.value)">
+              <input type="text" class="" name="bairro" id="bairro" placeholder="Bairro">
+
+            </div>
+            <div class="size-table-log">
+              <input type="text" class="numero" id="numero" placeholder="N°">
+              <input type="text" class="log" name="logradouro" id="logradouro" placeholder="Logradouro">
+            </div>
+          </div>
+          <div class='wrapper-four'>
+            <input type="text" class="cidade" name="cidade" id="cidade" placeholder="Cidade">
+            <input type="text" class="" name="uf" id="uf" placeholder="Estado">
+          </div>
+
+          <div class='container-button'>
+            <button id='register-button'>CADASTRAR</button>
+          </div>
+
+        </form>
+      </div>
+
+      <h1>
+        Clientes
+      </h1>
+
+      <div id="list">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>CPF ou CNPJ</th>
+                <th>Telefone</th>
+                <th>CEP</th>
+                <th>Bairro </th>
+                <th>Numero</th>
+                <th>Logradouro</th>
+                <th>Cidade</th>
+                <th>UF</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+        </div>
+      </div>
+
+  </main>
+
+  <script type="text/javascript" src="/javascript/buscaCep.js"></script>
+  <script type="text/javascript" src="/javascript/actions.js"></script>
+
+</body>
+
+</html>

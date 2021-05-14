@@ -1,0 +1,167 @@
+.style-header {
+  height: 118px;
+  background: rgba(17, 19, 20, 0.92);
+
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+}
+
+header img {
+  width: 100%;
+  max-width: 303px;
+  padding-left: 26px;
+}
+
+body {
+  background: #f0f0f0;
+  height: 100%;
+}
+
+.list {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: Roboto;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 15px;
+  font-weight: bold !important;
+  color: rgba(58, 64, 65, 1);
+  opacity: 93%;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    text-align: left;
+  }
+
+  .wrapper-one,
+  .wrapper-two,
+  .wrapper-four {
+    width: 100%;
+    max-width: 1318px !important;
+  }
+
+  .wrapper-three {
+    display: flex;
+    max-width: 1318px !important;
+  }
+
+  .size-table-cep {
+    width: 100%;
+    max-width: 1318px !important;
+    flex-direction: row !important;
+
+    display: flex;
+  }
+
+  .cep {
+    width: 100%;
+    max-width: 241px !important;
+    margin-right: 20px;
+  }
+  input {
+    text-align: left !important;
+    padding: 20px;
+    font-size: 1.2em !important;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 59px;
+  text-align: center;
+  background: #dfdfdf;
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-family: Roboto;
+  margin-bottom: 10px !important;
+}
+
+.wrapper-one,
+.wrapper-two,
+.wrapper-four {
+  width: 100%;
+  max-width: 305px;
+}
+
+.wrapper-three {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 305px;
+}
+
+.size-table-cep {
+  width: 100%;
+  max-width: 305px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cep {
+  width: 100%;
+}
+
+.size-table-log {
+  width: 100%;
+  display: flex;
+}
+
+.numero {
+  order: 2;
+
+  width: 100%;
+  max-width: 73px;
+  margin-left: 8px;
+}
+
+.container-button {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+#register-button {
+  width: 100%;
+  max-width: 281px;
+  height: 76px;
+  background: #aeea00;
+  border: 1px solid #aeea00;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+thead {
+  background: #dadada;
+  align-items: center;
+  justify-content: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(235, 229, 229);
+}
